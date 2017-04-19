@@ -10,6 +10,6 @@
 
 int main(int argc, const char * argv[]) {
     
-    std::cout << "This is My Homwwork";
+    std::cout << "This is My Homework";
     return 0;
 }
