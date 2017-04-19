@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
     remainingBalance = brenosBankAccount.withdraw(100);
     transferResult = mauriciosBankAccount.transfer(50, brenosBankAccount);
     
-    std::cout << "Breno's Balance" <<brenosBankAccount.balance;
-    std::cout << "Maurcio's Balance" <<mauriciosBankAccount.balance;
+    std::cout << "Breno's Balance" << brenosBankAccount.balance << "\n";
+    std::cout << "Maurcio's Balance" <<mauriciosBankAccount.balance << "\n";
     return 0;
 }
