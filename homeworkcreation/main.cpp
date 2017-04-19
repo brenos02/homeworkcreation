@@ -16,10 +16,15 @@
 
 int main(int argc, const char * argv[]) {
     Account brenosBankAccount;
+    Account mauriciosBankAccount;
+    
     float remainingBalance;
+    float transferResult;
     
     remainingBalance = brenosBankAccount.withdraw(100);
+    transferResult = mauriciosBankAccount.transfer(50, brenosBankAccount);
     
-    std::cout << remainingBalance;
+    std::cout << "Breno's Balance" <<brenosBankAccount.balance;
+    std::cout << "Maurcio's Balance" <<mauriciosBankAccount.balance;
     return 0;
 }
