@@ -8,15 +8,17 @@
 
 #include <iostream>
 #include "Account.hpp"
-/*TODO:Please create a class in a different file, named Account
-  attributes: id [integer], balance [float]
-  methods: withdraw (value)
+
+/*
+    TODO: create a transfer method that receives a value to be transfered and an Account object 
 */
+
 
 int main(int argc, const char * argv[]) {
     Account brenosBankAccount;
     float remainingBalance;
-    remainingBalance=brenosBankAccount.withdraw(100);
+    
+    remainingBalance = brenosBankAccount.withdraw(100);
     
     std::cout << remainingBalance;
     return 0;
