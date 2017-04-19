@@ -12,9 +12,9 @@ float Account::withdraw(float withdrawl){
     return balance;
 }
 
-float Account::transfer (float transferValue, Account destinationAccount) {
+float Account::transfer (float transferValue, Account *destinationAccount) {
     this->withdraw(transferValue);
-    destinationAccount.deposit(transferValue);
+    destinationAccount->deposit(transferValue);
     return 1;
 }
 
