@@ -7,14 +7,17 @@
 //
 
 #include <iostream>
-
+#include "Account.hpp"
 /*TODO:Please create a class in a different file, named Account
   attributes: id [integer], balance [float]
   methods: withdraw (value)
 */
 
 int main(int argc, const char * argv[]) {
+    Account brenosBankAccount;
+    float remainingBalance;
+    remainingBalance=brenosBankAccount.withdraw(100);
     
-    std::cout << "This is My Homework";
+    std::cout << remainingBalance;
     return 0;
 }
