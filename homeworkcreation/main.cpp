@@ -9,37 +9,31 @@
 #include <iostream>
 #include "Account.hpp"
 
-/*
-    TODO: 
- 1. Create constructor method that receives an initial balance. [use nameofobject() declaration]
- 2. Prevent transfer from being executed if origin account does not have enough balance. Return error code. [Use "if" statement]
-*/
-
-//void changeValue(int *a){
-//    *a = 10;
-//}
-
 int main(int argc, const char * argv[]) {
-    
-//    int b;
-//    b = 20;
-//    
-//    changeValue(&b);
-    
+
     Account brenosBankAccount;
     Account mauriciosBankAccount;
     
     float remainingBalance;
     float transferResult;
+    float intialBalance;
     
+    intialBalance = brenosBankAccount.intialBalance(1000);
+    intialBalance = mauriciosBankAccount.intialBalance(1000);
     remainingBalance = brenosBankAccount.withdraw(100);
     transferResult = mauriciosBankAccount.transfer(50, &brenosBankAccount);
     
     if (brenosBankAccount.balance>0)
-        std::cout<< "Breno's Balance" << brenosBankAccount.balance;
+        std::cout<< "Breno's Balance\n" << brenosBankAccount.balance;
     
     if (brenosBankAccount.balance<0)
     std::cout<< "Breno's Balance \n error not enough balance";
+    
+    if (mauriciosBankAccount.balance>0)
+        std::cout << "\nMauricio's Balance\n" << mauriciosBankAccount.balance;
+    
+    if (mauriciosBankAccount.balance<0)
+        std::cout<< "Maurcio's Balance \n error not enough balance";
     
     
     return 0;

@@ -23,5 +23,8 @@ float Account::deposit (float depositValue){
     return balance;
 }
 
-
+float Account::intialBalance (float intialBalance) {
+    balance=intialBalance;
+    return balance;
+}
 
