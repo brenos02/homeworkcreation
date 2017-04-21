@@ -18,7 +18,7 @@ public:
     float withdraw(float withdrawl);
     float transfer (float transferValue, Account *destinationAccount);
     float deposit (float depositValue);
-    float intialBalance( float intialBalance);
-};
+    float intialBalance(float intialBalance);
+  };
 
 #endif /* Account_hpp */
