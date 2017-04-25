@@ -23,13 +23,13 @@ int main(int argc, const char * argv[]) {
     remainingBalance = brenosBankAccount.withdraw(100);
     transferResult = mauriciosBankAccount.transfer(50, &brenosBankAccount);
     
-    if (brenosBankAccount.balance>0)
-        std::cout<< "Breno's Balance: \n" << brenosBankAccount.balance;
     
-    std::cout<< "\n";
    
-    if (brenosBankAccount.balance<0)
-    std::cout<< "Breno's Balance: \nerror not enough balance\n";
+    if (brenosBankAccount.balance==-1)
+        std::cout<< "Breno's Balance: \nerror not enough balance\n";
+    else{
+        std::cout<< "Breno's Balance: \n" << brenosBankAccount.balance;
+    }
     
     if (mauriciosBankAccount.balance>0)
         std::cout << "\nMauricio's Balance: \n" << mauriciosBankAccount.balance;
