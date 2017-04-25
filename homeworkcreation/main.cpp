@@ -11,15 +11,15 @@
 
 int main(int argc, const char * argv[]) {
 
-    Account brenosBankAccount;
-    Account mauriciosBankAccount;
+    Account brenosBankAccount(10);
+    Account mauriciosBankAccount(20);
     
     float remainingBalance;
     float transferResult;
-    float intialBalance;
+    //float intialBalance;
     
-    intialBalance = brenosBankAccount.intialBalance(10);
-    intialBalance = mauriciosBankAccount.intialBalance(100);
+    //intialBalance = brenosBankAccount.intialBalance(10);
+    //intialBalance = mauriciosBankAccount.intialBalance(100);
     remainingBalance = brenosBankAccount.withdraw(100);
     transferResult = mauriciosBankAccount.transfer(50, &brenosBankAccount);
     

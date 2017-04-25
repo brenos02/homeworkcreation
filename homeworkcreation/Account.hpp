@@ -15,6 +15,8 @@ class Account {
 public:
     int id;
     float balance;
+    
+    Account(float initialBalance); //class constructor
     float withdraw(float withdrawl);
     float transfer (float transferValue, Account *destinationAccount);
     float deposit (float depositValue);

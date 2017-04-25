@@ -7,6 +7,12 @@
 //
 
 #include "Account.hpp"
+
+// class constructor
+Account::Account(float initialBalance){
+    balance = initialBalance;
+}
+
 float Account::withdraw(float withdrawl){
     balance= balance-withdrawl;
     return balance;
