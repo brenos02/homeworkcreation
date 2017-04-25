@@ -19,7 +19,7 @@ float Account::withdraw(float withdrawl){
 }
 
 float Account::transfer (float transferValue, Account *destinationAccount) {
-    if (transferValue<balance){
+    if (transferValue>balance){
         return -1;
     }
     else{

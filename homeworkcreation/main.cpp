@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
     brenosBankAccount.applyServiceTax(0.02);
     mauriciosBankAccount.applyServiceTax(0.02);
 
-    if (brenosBankAccount.balance==-1)
+    if (transferResult==-1)
         std::cout<< "Breno's Balance: \nerror not enough balance\n";
     else{
         std::cout<< "Breno's Balance: \n" << brenosBankAccount.balance;
@@ -33,7 +33,7 @@ int main(int argc, const char * argv[]) {
         std::cout << "\nMauricio's Balance: \n" << mauriciosBankAccount.balance;
   
     if (mauriciosBankAccount.balance<0)
-        std::cout<< "Maurcio's Balance: \nerror not enough balance";
+        std::cout<< "\nMaurcio's Balance: \nerror not enough balance";
     
     std::cout<< "\n";
     std::cout<<"\n";
