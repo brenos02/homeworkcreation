@@ -16,15 +16,13 @@ int main(int argc, const char * argv[]) {
     
     float remainingBalance;
     float transferResult;
-    //float intialBalance;
-    
-    //intialBalance = brenosBankAccount.intialBalance(10);
-    //intialBalance = mauriciosBankAccount.intialBalance(100);
+
     remainingBalance = brenosBankAccount.withdraw(100);
     transferResult = mauriciosBankAccount.transfer(50, &brenosBankAccount);
     
-    
-   
+    brenosBankAccount.applyServiceTax(0.02);
+    mauriciosBankAccount.applyServiceTax(0.02);
+
     if (brenosBankAccount.balance==-1)
         std::cout<< "Breno's Balance: \nerror not enough balance\n";
     else{

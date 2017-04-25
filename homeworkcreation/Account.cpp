@@ -34,8 +34,8 @@ float Account::deposit (float depositValue){
     return balance;
 }
 
-float Account::intialBalance (float intialBalance) {
-    balance=intialBalance;
+float Account::applyServiceTax(float tax) {
+    balance = balance * (1 - tax);
     return balance;
 }
 
