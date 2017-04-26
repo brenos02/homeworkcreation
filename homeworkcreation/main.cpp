@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include "Account.hpp"
-// HW 2: Create new object investment account, (method that recieves dividends).
 int main(int argc, const char * argv[]) {
 
     Account brenosBankAccount(0);
@@ -37,6 +36,12 @@ int main(int argc, const char * argv[]) {
         std::cout<< "Breno's Balance: \nerror not enough balance\n";
     else{
         std::cout<< "Breno's Balance: \n" << brenosBankAccount.balance;
+    }
+    
+    if (brenosBankAccount.balance<0)
+        std::cout<< "\nBreno's Balance: \n Error not enough balance\n";
+    else {
+        std::cout<< "\nBreno's Balance: \n" <<brenosBankAccount.balance;
     }
     
     if (mauriciosBankAccount.balance>0)
