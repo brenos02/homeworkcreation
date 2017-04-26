@@ -40,4 +40,13 @@ float Account::applyServiceTax(float tax) {
 }
 
 
+float Account::loan(float loanAmount){
+    balance = balance + loanAmount;
+    return balance;
+}
 
+
+float Account::loanCollection(float loanCollectionAmount) {
+    balance = balance- loanCollectionAmount;
+    return balance;
+}

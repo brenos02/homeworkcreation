@@ -21,6 +21,9 @@ public:
     float transfer (float transferValue, Account *destinationAccount);
     float deposit (float depositValue);
     float applyServiceTax(float tax);
-  };
+    float loan (float loanAmount);
+    float loanCollection (float loanCollectionAmount);
+    float loanIntrestRate (float loanIntrestRate);
+    };
 
 #endif /* Account_hpp */

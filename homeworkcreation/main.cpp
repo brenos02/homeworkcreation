@@ -8,21 +8,31 @@
 
 #include <iostream>
 #include "Account.hpp"
-
+// HW 2: Create new object investment account, (method that recieves dividends).
 int main(int argc, const char * argv[]) {
 
-    Account brenosBankAccount(10);
-    Account mauriciosBankAccount(20);
+    Account brenosBankAccount(0);
+    Account mauriciosBankAccount(10);
+    
     
     float remainingBalance;
     float transferResult;
+    
+    brenosBankAccount.loan(00);
+    mauriciosBankAccount.loan(100);
+    
+    remainingBalance = brenosBankAccount.withdraw(10);
+    transferResult = mauriciosBankAccount.transfer(0, &brenosBankAccount);
 
-    remainingBalance = brenosBankAccount.withdraw(100);
-    transferResult = mauriciosBankAccount.transfer(50, &brenosBankAccount);
+    brenosBankAccount.loanCollection(0);
+    mauriciosBankAccount.loanCollection(100);
     
     brenosBankAccount.applyServiceTax(0.02);
     mauriciosBankAccount.applyServiceTax(0.02);
 
+    
+   
+    
     if (transferResult==-1)
         std::cout<< "Breno's Balance: \nerror not enough balance\n";
     else{
