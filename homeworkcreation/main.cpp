@@ -6,6 +6,12 @@
 //  Copyright © 2017 Breno Sallouti. All rights reserved.
 //
 
+// Modify the Account class to have only basic behavior
+// Create the InvestmentAccount that inherits from the Account class. Create stockValuation method that increases balance by stockInterest rate (attribute).
+//Create the SavingsAccount that inherits from the Account class. Create savingsValuation method that increases balance by savingsInterest rate
+
+
+
 #include <iostream>
 #include "Account.hpp"
 int main(int argc, const char * argv[]) {
