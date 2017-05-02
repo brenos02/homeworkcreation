@@ -23,7 +23,6 @@ public:
     float applyServiceTax(float tax);
     float loan (float loanAmount);
     float loanCollection (float loanCollectionAmount);
-    float loanIntrestRate (float loanIntrestRate);
     };
 
 #endif /* Account_hpp */

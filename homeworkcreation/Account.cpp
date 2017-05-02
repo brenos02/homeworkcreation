@@ -47,6 +47,6 @@ float Account::loan(float loanAmount){
 
 
 float Account::loanCollection(float loanCollectionAmount) {
-    balance = balance- loanCollectionAmount;
+    balance = balance - loanCollectionAmount;
     return balance;
 }
