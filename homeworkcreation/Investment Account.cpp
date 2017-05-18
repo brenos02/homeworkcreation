@@ -7,10 +7,14 @@
 //
 
 #include "Investment Account.hpp"
-
+#include "main.cpp"
 
 float Investment::dividends(float dividendsReturns, float investmentAccountBalance){
     investmentAccountBalance= investmentAccountBalance+dividendsReturns;
     return investmentAccountBalance;
+}
+float Investment::stockValuation(float investmentAccountBalance, float stockReturns, float dividendReturns){
+    dividendReturns = investmentAccountBalance + stockReturns;
+    return dividendReturns;
 }
 

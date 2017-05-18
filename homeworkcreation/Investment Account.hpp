@@ -15,6 +15,7 @@ class Investment {
 public:
     float investmentAccountBalance (float investmentAccountBalance);
     float dividends (float dividendsReturns,float investmentAccountBalance);
+    float stockValuation (float investmentAccountBalance, float stockReturns, float dividendsReturns);
 };
 
 #endif /* Investment_Account_hpp */

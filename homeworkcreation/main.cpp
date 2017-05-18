@@ -18,8 +18,6 @@ int main(int argc, const char * argv[]) {
 
     Account brenosBankAccount(0);
     Account mauriciosBankAccount(10);
-    
-    
     float remainingBalance;
     float transferResult;
     

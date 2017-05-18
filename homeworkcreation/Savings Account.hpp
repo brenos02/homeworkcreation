@@ -12,3 +12,10 @@
 #include <stdio.h>
 
 #endif /* Savings_Account_hpp */
+
+class savingsAccount{
+public:
+float savingsBalance (float savingsAccountBalance);
+    float savingsAccountIntrestRate (float savingsIntrest);
+};
+    

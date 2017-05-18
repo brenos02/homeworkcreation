@@ -7,3 +7,8 @@
 //
 
 #include "Savings Account.hpp"
+#include "main.cpp"
+    float savingsAccount(float savingsIntrest){
+    float savingsAccountBalance= savingsAccountBalance*savingsIntrest;
+    
+}
