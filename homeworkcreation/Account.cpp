@@ -9,6 +9,11 @@
 #include "Account.hpp"
 
 // class constructor
+
+Account::Account(){
+    balance = 0;
+}
+
 Account::Account(float initialBalance){
     balance = initialBalance;
 }

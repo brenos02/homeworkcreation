@@ -14,9 +14,17 @@
 
 #include <iostream>
 #include "Account.hpp"
+#include "SavingsAccount.hpp"
+
 int main(int argc, const char * argv[]) {
 
-    Account brenosBankAccount(0);
+    SavingsAccount brenosSavAcc(10);
+    
+    std::cout << brenosSavAcc.balance;
+    
+    Account johnsAcc;
+    
+/*    Account brenosBankAccount(0);
     Account mauriciosBankAccount(10);
     float remainingBalance;
     float transferResult;
@@ -56,6 +64,7 @@ int main(int argc, const char * argv[]) {
     
     std::cout<< "\n";
     std::cout<<"\n";
+ */
     return 0;
 }
 
